@@ -1,0 +1,46 @@
+
+var customer=[
+    {
+        id:1,
+        name: "Nguyễn Văn A",
+        email:"nguyenvana@gmail.com"
+
+    },
+    {
+        id:2,
+        name: "Nguyễn Văn B",
+        email:"nguyenvanb@gmail.com"
+
+    },
+    {
+        id:3,
+        name: "Nguyễn Văn C",
+        email:"nguyenvanc@gmail.com"
+
+    },
+    {
+        id:4,
+        name: "Nguyễn Văn D",
+        email:"nguyenvand@gmail.com"
+
+    }
+];
+
+var html=`<table border="1" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>email</th>
+    </tr>
+<table>`;
+customer.forEach(function(customer)
+{
+    document.write(`<tr>
+				
+				<td>${customer.id}</td>
+				<td>${customer.name}</td>
+				<td>${customer.email}</td>
+				
+			</tr>`)
+});
+
