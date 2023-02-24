@@ -26,21 +26,20 @@ var customer=[
     }
 ];
 
-var html=`<table border="1" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <th>id</th>
-      <th>name</th>
-      <th>email</th>
-    </tr>
-<table>`;
-customer.forEach(function(customer)
-{
+document.write("<table border='1' width=100% cellspacing=0 cellpadding=0>");
+document.write("<tr>");
+document.write("<th>id</th>");
+document.write("<th>name</th>");
+document.write("<th>email</th>");
+document.write("</tr>");
+for(var i=0;i<customer.length;i++)
+ {
     document.write(`<tr>
 				
-				<td>${customer.id}</td>
-				<td>${customer.name}</td>
-				<td>${customer.email}</td>
+				<td>${customer[i].id}</td>
+				<td>${customer[i].name}</td>
+				<td>${customer[i].email}</td>
 				
 			</tr>`)
-});
 
+ }
